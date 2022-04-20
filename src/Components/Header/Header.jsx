@@ -9,7 +9,7 @@ import heart from "../assets/images/heart.svg";
 
 const Header = () => {
 
-   const { savedCorzinka , setSavedCorzinka } = useContext(Context);
+   const { savedCorzinka } = useContext(Context);
    const { withLove } = useContext(Context);
 
 

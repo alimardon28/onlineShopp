@@ -9,6 +9,23 @@ function Provider({ children }){
     const [ products , setProducts ] = useState();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    // useEffect(() => {
+    //     window.localStorage.setItem('product', JSON.stringify(withLove))
+    // }, [withLove])
+
+
     useEffect(() => {
         fetch("https://authentiication.herokuapp.com/posts")
         .then(response => response.json())

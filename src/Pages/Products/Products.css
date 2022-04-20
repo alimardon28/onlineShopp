@@ -31,13 +31,21 @@
     flex-direction: column;
 }
 
-.heartBox{
+.buttonBox{
     text-align: start;
+    width: 40px;
+}
+
+.heartBox{
     cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .heartBox img{
-    width:7%;
+    width: 100%;
 }
 .productsLink{
     text-decoration: none;
