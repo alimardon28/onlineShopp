@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Selected = () => {
+const Corzinka = () => {
     return (
         <div>
-            <h1>selected</h1>
+            <h1>korzinka</h1>
         </div>
     );
 }
 
-export default Selected;
+export default Corzinka;

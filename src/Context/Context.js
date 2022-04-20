@@ -4,8 +4,9 @@ const Context = createContext();
 
 function Provider({ children }){
 
-
-    const [ products , setProducts ] = useState()
+    const [ savedCorzinka , setSavedCorzinka ] = useState();
+    const [ withLove , setWithLove ] = useState();
+    const [ products , setProducts ] = useState();
 
 
     useEffect(() => {
@@ -16,7 +17,7 @@ function Provider({ children }){
 
 
     return(
-        <Context.Provider value={{ products , setProducts }}>
+        <Context.Provider value={{ products , setProducts , withLove , setWithLove , savedCorzinka , setSavedCorzinka}}>
             { children }
         </Context.Provider>
     )
