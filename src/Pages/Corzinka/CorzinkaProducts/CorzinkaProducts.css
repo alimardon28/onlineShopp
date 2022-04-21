@@ -1,0 +1,104 @@
+.corzinkaProductsSaved{
+    margin: 0;
+    padding:30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.savedCorzina{
+    box-shadow: 4px 4px 10px #cacaca;
+    padding:18px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    width: 360px;
+}
+
+.saved{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.saved img{
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.savedSum{
+    text-align: start;
+    padding: 10px;
+}
+
+.savedSum-title{
+    font-size: 20px;
+    color: #5c5c5c;
+}
+
+.deleteBox{
+    text-align: end;
+}
+
+.delete{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-trash{
+    width: 25px;
+    object-fit: cover;
+}
+
+.savedSum-sum{
+    font-size: 26px;
+    color: #292929;
+}
+.savedCounter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.counterSum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counterBtn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(249, 182, 100);
+    padding: 4px 10px;
+    font-size:22px;
+    margin-right: 14px;
+    border-radius: 50px;
+}
+
+.minus{
+    padding: 3px 14px;
+}
+
+.plus{
+    margin-left: 14px;
+}
+
+.counterZero{
+    font-size:22px;
+}
+
+.counter-sum{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #5c5c5c;
+    color: #fff;
+}

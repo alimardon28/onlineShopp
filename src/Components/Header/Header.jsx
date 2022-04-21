@@ -26,13 +26,13 @@ const Header = () => {
           <li className="header-item">
             <Link className="header-item-link" to="/selected">
               <img className="heart-icons" src={heart} alt="heart images" />
-              <span className="header-span">0</span>
+              <span className="header-span">{withLove.length}</span>
             </Link>
           </li>
           <li className="header-item">
             <Link className="header-item-link" to="/corzinka">
               <img className="heart-icons" src={cart} alt="cart images" />
-              <span className="header-span">0</span>
+              <span className="header-span">{savedCorzinka.length}</span>
             </Link>
           </li>
         </ul>

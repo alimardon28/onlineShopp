@@ -4,7 +4,6 @@ import { Link , useParams } from 'react-router-dom';
 import heart from "../../Components/assets/images/heart.svg";
 import heartFill from "../../Components/assets/images/heart-fill.svg";
 import { Context } from '../../Context/Context';
-import Button from '@mui/material/Button';
 import '../SingleProducts/SingleProducts.css';
 
 
@@ -16,7 +15,7 @@ const Singleproducts = () => {
    const date = useParams()
 
 
-    const [ singleProducts , setSingleProducts ] = useState([]);
+    const [ dataProducts , setDataProducts ] = useState([]);
     const [ singleProductsCorzinka , setSingleProductsCorzinka ] = useState([]);
 
    const { products } = useContext(Context);
@@ -28,10 +27,27 @@ const Singleproducts = () => {
    useEffect(() => {
     fetch(`https://authentiication.herokuapp.com/posts/${date.productId}`)
     .then(response => response.json())
-    .then(data => setSingleProducts(data))
+    .then(data => setDataProducts(data))
 
      } , [])
 
+
+const handleCorzinkaAdd = (id) =>{
+    products?.map(item => {
+       if(item.id == id){
+        savedCorzinka.push(item)
+       }
+    })
+}
+
+
+const handleKupitCorzinka = (id) => {
+    products?.map(item => {
+        if(item.id == id){
+            savedCorzinka.push(item)
+        }
+    })
+}
 
 
     return (
@@ -45,12 +61,12 @@ const Singleproducts = () => {
                              </button>
                          </div>
                          <div className="imagesBox">
-                             <img src={singleProducts.thumbnailUrl} alt={`${singleProducts.title} images`} />
-                             <img src={singleProducts.thumbnail} alt={`${singleProducts.title} images`} />
+                             <img src={dataProducts.thumbnailUrl} alt={`${dataProducts.title} images`} />
+                             <img src={dataProducts.thumbnail} alt={`${dataProducts.title} images`} />
                          </div>
                          <div className="sumBox">
-                             <h2 className='sumBox-title'>{singleProducts.title}</h2>
-                             <p className='sumBox-sum'>$ {singleProducts.sum}</p>
+                             <h2 className='sumBox-title'>{dataProducts.title}</h2>
+                             <p className='sumBox-sum'>$ {dataProducts.sum}</p>
                          </div>
                      </div>
                     <div className="sinleProductsBox">
@@ -59,14 +75,16 @@ const Singleproducts = () => {
                                 <h3 className='opisaneBox-heading'>Описание и характеристики</h3>
                             </div>
                             <div className="opitsane-description">
-                                <p className='opitsane-desc'>{singleProducts.description}</p>
+                                <p className='opitsane-desc'>{dataProducts.description}</p>
                             </div>
                         </div>
                         <div className="buttonBox">
-                            <Button  className='button' variant="contained">купить !</Button>
-                            <Button  className='button' variant='contained'>
+                            <Link className='singliBtnLink' id={dataProducts.id} onClick={(e) => handleKupitCorzinka(e.target.id)} to='/corzinka'>
+                            <button  className='button'>купить !</button>
+                            </Link>
+                            <button id={dataProducts.id} onClick={(e) => handleCorzinkaAdd(e.target.id)} className='button'>
                             <i className="bi bi-cart3"></i>
-                                добавить в корзину</Button>
+                                добавить в корзину</button>
                         </div>
                     </div>
                 </div>

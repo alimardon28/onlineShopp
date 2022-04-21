@@ -1,0 +1,36 @@
+.corzinaImagesBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.corzinaImagesBox img{
+    object-fit: cover;
+}
+
+.corzenaTitle{
+    font-size: 30px;
+    padding-top:12px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.corzena-desc{
+    font-size: 16px;
+    margin: 0;
+    padding-top: 6px;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+}
+
+.corzenaLink{
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+.corzenaButton{
+    width: 360px;
+    height: 50px;
+   
+}

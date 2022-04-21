@@ -4,8 +4,8 @@ const Context = createContext();
 
 function Provider({ children }){
 
-    const [ savedCorzinka , setSavedCorzinka ] = useState();
-    const [ withLove , setWithLove ] = useState();
+    const [ savedCorzinka , setSavedCorzinka ] = useState([]);
+    const [ withLove , setWithLove ] = useState([]);
     const [ products , setProducts ] = useState();
 
 
@@ -21,9 +21,9 @@ function Provider({ children }){
 
 
 
-    // useEffect(() => {
-    //     window.localStorage.setItem('product', JSON.stringify(withLove))
-    // }, [withLove])
+    useEffect(() => {
+        window.localStorage.setItem('product', JSON.stringify(withLove))
+    }, [withLove])
 
 
     useEffect(() => {

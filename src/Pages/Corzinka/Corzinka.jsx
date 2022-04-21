@@ -1,10 +1,22 @@
-import React from 'react';
+import React ,  { useContext } from 'react';
+import { useState , useEffect } from 'react';
+import { Context } from '../../Context/Context';
+import ProductsSaveds from '../ProductsPages/ProductsSaveds/ProductsSaveds';
+import CorzinkaProducts from '../Corzinka/CorzinkaProducts/CorzinkaProducts';
 
-const Corzinka = () => {
+
+const Corzinka = (props) => {
+
+  const { savedCorzinka } = useContext(Context);
+
+
+
+
+
     return (
-        <div>
-            <h1>korzinka</h1>
-        </div>
+        <>
+             {savedCorzinka.length > 0  ? <CorzinkaProducts/> : <ProductsSaveds/> }
+        </>
     );
 }
 
