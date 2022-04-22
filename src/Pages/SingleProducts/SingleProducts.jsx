@@ -79,8 +79,8 @@ const handleKupitCorzinka = (id) => {
                             </div>
                         </div>
                         <div className="buttonBox">
-                            <Link className='singliBtnLink' id={dataProducts.id} onClick={(e) => handleKupitCorzinka(e.target.id)} to='/corzinka'>
-                            <button  className='button'>купить !</button>
+                            <Link className='singliBtnLink' to='/corzinka'>
+                            <button  className='button' id={dataProducts.id}  onClick={(e) => handleKupitCorzinka(e.target.id)}>купить !</button>
                             </Link>
                             <button id={dataProducts.id} onClick={(e) => handleCorzinkaAdd(e.target.id)} className='button'>
                             <i className="bi bi-cart3"></i>

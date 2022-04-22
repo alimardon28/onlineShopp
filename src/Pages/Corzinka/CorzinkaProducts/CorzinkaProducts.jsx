@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { useState , useEffect } from 'react';
 import { Context } from '../../../Context/Context';
+import { Link } from 'react-router-dom'
 import '../CorzinkaProducts/CorzinkaProducts.css';
 import trash from '../../../Components/assets/images/trash.png';
 
@@ -71,8 +72,17 @@ const Corzinkaproducts = () => {
     }
 
 
+    let sumCounters = [];
 
+    savedCorzinka?.map(item => {
+        let sums = (item.sum * item.didmount)
 
+        sumCounters.push(Number(sums))
+    })
+
+    let count = sumCounters.reduce(function(a ,b){
+        return a + b;
+    })
 
 
 
@@ -81,10 +91,11 @@ const Corzinkaproducts = () => {
         <div>
               <section>
                    <div className="corzinkaProductsSaved">
+                       <div className="saveCorzinca">
                          {
                              savedCorzinka?.map(item => {
                                  return(
-                                     <div className="savedCorzina">
+                                     <div className="savedCorzina" key={item.id}>
                                          <div className="deleteBox">
                                              <button onClick={() => handleDelete(item.id)} className='delete'>
                                                  <img className='delete-trash' src={trash} alt="trash images" />
@@ -111,6 +122,18 @@ const Corzinkaproducts = () => {
                                  )
                              })
                          }
+                         </div>
+
+                         <div className="productsItogo">
+                             <div className="productsItogo-element">
+                                 <h3 className='element-title'>ИТОГО</h3>
+                                 <span className='element-sumSpan'>{count} $</span>
+                             </div>
+
+                             <Link className='productsItogo-link' to=''>
+                                 Перейти к оформлению
+                             </Link>
+                         </div>
                    </div>
               </section>
         </div>
