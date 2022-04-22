@@ -1,0 +1,346 @@
+.orderingHeading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.orderingLeft {
+  box-shadow: 4px 4px 13px #908f8f;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.orderingSums {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+}
+
+.formHeading {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.orderingSpan {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.orderingLocation {
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.ordering-location {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.locationBar {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.orderingDesc {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.locationBar img {
+  margin-right: 10px;
+}
+
+.orderingOptions,
+.orderingInput {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.orderingOptions .select {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  background-color: #e6e3e3;
+  border-radius: 14px;
+  padding: 12px 8px;
+  color: #908f8f;
+}
+.select option {
+  color: #fdfafa;
+}
+
+.orderingInput .orderingInput-input {
+  border: none;
+  outline: none;
+  width: 94%;
+  height: 25px;
+  background-color: #e6e3e3;
+  border-radius: 14px;
+  padding: 11px;
+  color: #908f8f;
+}
+
+.orderingInput .orderingInput-input::placeholder {
+  color: #8d8b8b;
+}
+
+.orderingInputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ordering-inputs {
+  border: none;
+  outline: none;
+  height: 25px;
+  background-color: #e6e3e3;
+  border-radius: 14px;
+  padding: 11px;
+  color: #908f8f;
+}
+
+.ordering-inputs:nth-child(2) {
+  margin-left: 8px;
+}
+
+.ordering-inputs::placeholder {
+  color: #8d8b8b;
+}
+
+.orderingKvartere {
+  text-align: start;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.orderingKvartere input {
+  width: 43%;
+  height: 25px;
+  border: none;
+  border-radius: 14px;
+  background-color: #e6e3e3;
+  outline: none;
+  padding: 11px;
+  color: #908f8f;
+}
+
+.orderingRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.orderingRightZakaz {
+  padding: 14px;
+  box-shadow: 4px 4px 12px rgba(123, 123, 123, 0.8);
+  background-color: #fff;
+  border-radius: 20px;
+  width: 91%;
+}
+
+.orderingRightHeading-title {
+  padding: 8px 0px;
+  text-align: start;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.orderingProducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderingProducts-didmount {
+  padding: 4px;
+  margin: 0;
+  font-size: 18px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.orderingProducts-title {
+  margin: 0;
+  padding: 4px;
+  font-style: 14px;
+}
+
+.orderingProducts-sum {
+  padding: 4px;
+  margin: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.orderingDelivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+}
+
+.orderingDelivery-title {
+  font-size: 14px;
+  margin: 0;
+  padding: 4px 0px;
+}
+
+.orderingDelivery-sum {
+  padding: 4px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.orderingPay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+}
+
+.orderingPay-title {
+  font-size: 14px;
+  margin: 0;
+  padding: 4px 0px;
+}
+
+.orderingPay-sum {
+  padding: 4px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.orderingPayment {
+  margin-top: 12px;
+  box-shadow: 4px 4px 13px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 12px;
+  width: 91%;
+}
+
+.orderingPayment h3 {
+  font-size: 15px;
+  text-align: start;
+}
+
+.orderingVisa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.orderingVisa img {
+  margin-right: 8px;
+}
+
+.orderingVisa select {
+  outline: none;
+  border: none;
+}
+
+.orderingPromocods {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.orderingPromocods img {
+  margin-right: 8px;
+}
+
+.orderingPromocods select {
+  outline: none;
+  border: none;
+  color: #908f8f;
+}
+
+.orderingPromocods select option {
+  color: #908f8f;
+}
+
+.orderingNumbers {
+  margin-top: 12px;
+  box-shadow: 4px 4px 13px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 12px;
+  width: 91%;
+}
+
+.orderingNumbers h3 {
+  text-align: start;
+  font-size: 15px;
+  margin: 0;
+  padding: 4px;
+}
+
+.orderingNumbers input {
+  margin-top: 8px;
+  width: 90%;
+  height: 25px;
+  border: none;
+  border-radius: 14px;
+  background-color: #e6e3e3;
+  outline: none;
+  padding: 11px;
+  color: #908f8f;
+}
+
+.orderingNumbers input::placeholder {
+  font-weight: bold;
+  color: #b3b3b3;
+}
+
+.orderingBoxBtn {
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.orderingBtn {
+  box-shadow: 4px 4px 13px;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px 72px;
+  border-radius: 12px;
+  text-decoration: none;
+}

@@ -130,7 +130,7 @@ const Corzinkaproducts = () => {
                                  <span className='element-sumSpan'>{count} $</span>
                              </div>
 
-                             <Link className='productsItogo-link' to=''>
+                             <Link className='productsItogo-link' to='/ordering'>
                                  Перейти к оформлению
                              </Link>
                          </div>
