@@ -1,154 +1,154 @@
-.corzinkaProductsSaved{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding:30px;
-    margin: 0;
+.corzinkaProductsSaved {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 0;
 }
 
-.saveCorzinca{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+.saveCorzinca {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.savedCorzina{
-    box-shadow: 4px 4px 10px #cacaca;
-    padding:18px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    display: flex;
-    background-color: #fff;
-    flex-direction: column;
-    width: 360px;
+.savedCorzina {
+  box-shadow: 4px 4px 10px #cacaca;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  width: 360px;
 }
 
-.saved{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+.saved {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.saved img{
-    width: 180px;
-    height: 200px;
-    object-fit: cover;
+.saved img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.savedSum{
-    text-align: start;
-    padding: 10px;
+.savedSum {
+  text-align: start;
+  padding: 10px;
 }
 
-.savedSum-title{
-    font-size: 20px;
-    color: #5c5c5c;
+.savedSum-title {
+  font-size: 20px;
+  color: #5c5c5c;
 }
 
-.deleteBox{
-    text-align: end;
+.deleteBox {
+  text-align: end;
 }
 
-.delete{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    cursor: pointer;
+.delete {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.delete-trash{
-    width: 25px;
-    object-fit: cover;
+.delete-trash {
+  width: 25px;
+  object-fit: cover;
 }
 
-.savedSum-sum{
-    font-size: 26px;
-    color: #292929;
+.savedSum-sum {
+  font-size: 26px;
+  color: #292929;
 }
-.savedCounter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.counterSum{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.savedCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-.counterBtn{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: rgb(249, 182, 100);
-    padding: 4px 10px;
-    font-size:22px;
-    margin-right: 14px;
-    border-radius: 50px;
+.counterSum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.minus{
-    padding: 3px 14px;
+.counterBtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: rgb(249, 182, 100);
+  padding: 4px 10px;
+  font-size: 22px;
+  margin-right: 14px;
+  border-radius: 50px;
 }
 
-.plus{
-    margin-left: 14px;
+.minus {
+  padding: 3px 14px;
 }
 
-.counterZero{
-    font-size:22px;
+.plus {
+  margin-left: 14px;
 }
 
-.counter-sum{
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #5c5c5c;
-    color: #fff;
+.counterZero {
+  font-size: 22px;
 }
 
-.productsItogo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 5px 5px 12px #939292;
-    padding:10px 0px 0px 0px;
-    background-color: #fff;
-    border-radius: 15px;
-    width: 350px;
+.counter-sum {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #5c5c5c;
+  color: #fff;
 }
 
-.productsItogo-element{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+.productsItogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 12px #939292;
+  padding: 10px 0px 0px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 350px;
 }
 
-.element-title{
-    color: #464646;
-    font-size: 16px;
-    padding: 8px;
+.productsItogo-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-.element-sumSpan{
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #464646;
-    color: #fff;
-    font-weight: bold;
+.element-title {
+  color: #464646;
+  font-size: 16px;
+  padding: 8px;
 }
 
-.productsItogo-link{
-    box-shadow: 4px 4px 12px #464646;
-    padding:20px 10px;
-    border-radius: 15px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+.element-sumSpan {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #464646;
+  color: #fff;
+  font-weight: bold;
+}
+
+.productsItogo-link {
+  box-shadow: 4px 4px 12px #464646;
+  padding: 20px 10px;
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }

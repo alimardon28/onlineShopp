@@ -4,11 +4,11 @@
   text-align: start;
 }
 
-.form {
+.form-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap !important;
 }
 
 .orderingLeft {
@@ -260,7 +260,7 @@
 .orderingVisa {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 4px;
 }
 
@@ -271,13 +271,14 @@
 .orderingVisa select {
   outline: none;
   border: none;
+  width: 100%;
 }
 
 .orderingPromocods {
   margin-top: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 4px;
 }
 
@@ -289,6 +290,7 @@
   outline: none;
   border: none;
   color: #908f8f;
+  width: 100%;
 }
 
 .orderingPromocods select option {

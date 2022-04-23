@@ -5,15 +5,14 @@ import { Link } from "react-router-dom";
 import heart from "../../Components/assets/images/heart.svg";
 import heartFill from "../../Components/assets/images/heart-fill.svg";
 import ProductsSaved from "../ProductsPages/ProductsSaved/ProductsSaved";
-import '../Selected/Selected.css';
+import "../Selected/Selected.css";
 
 const Selected = () => {
   const { withLove, setWithLove } = useContext(Context);
 
-   const hanleDeleteClick = (id) => {
-         setWithLove(state => state.filter(element => element.id !== id))
-   }
-
+  const hanleDeleteClick = (id) => {
+    setWithLove((state) => state.filter((element) => element.id !== id));
+  };
 
   return (
     <div>
@@ -23,7 +22,7 @@ const Selected = () => {
         <div>
           <div className="container">
             <ul className="productsList">
-              {withLove?.map(item => {
+              {withLove?.map((item) => {
                 return (
                   <li className="productsItem" key={item.id}>
                     <div className="buttonBox">
@@ -43,19 +42,14 @@ const Selected = () => {
                     <Link className="productsLink" to={`/posts/${item.id}`}>
                       <div className="productscard">
                         <div className="productsImages">
-                          <img
-                            src={item.url}
-                            alt={`${item.title} images`}
-                          />
+                          <img src={item.url} alt={`${item.title} images`} />
                         </div>
                         <div className="productsHeading">
                           <h2 className="productsTitle">{item.title}</h2>
                         </div>
                         <div className="productsCardBody">
                           <span className="productsSum">$ {item.sum}</span>
-                          <span className="productsStar">
-                            ⭐️ {item.star}
-                          </span>
+                          <span className="productsStar">⭐️ {item.star}</span>
                         </div>
                       </div>
                     </Link>

@@ -8,10 +8,8 @@ import cart from "../assets/images/cart3.svg";
 import heart from "../assets/images/heart.svg";
 
 const Header = () => {
-
-   const { savedCorzinka } = useContext(Context);
-   const { withLove } = useContext(Context);
-
+  const { savedCorzinka } = useContext(Context);
+  const { withLove } = useContext(Context);
 
   return (
     <div className="headers">

@@ -12,17 +12,18 @@ const Products = () => {
   const { setWithLove } = useContext(Context);
 
   const hanleClick = (e) => {
-    let id = e.target.id
-    products?.map(item => {
+    let id = e.target.id;
+    products?.map((item) => {
       if (item.id == id) {
-        item.addSaved = !item.addSaved
+        item.addSaved = !item.addSaved;
         window.localStorage.setItem("products", JSON.stringify(products));
         if (item.addSaved) {
-          setWithLove(state => [...state, item]);
+          setWithLove((state) => [...state, item]);
           window.localStorage.setItem("products", JSON.stringify(products));
         } else {
-          setWithLove(state =>
-            state.filter(element => element.id !== item.id));
+          setWithLove((state) =>
+            state.filter((element) => element.id !== item.id)
+          );
         }
       }
     });
