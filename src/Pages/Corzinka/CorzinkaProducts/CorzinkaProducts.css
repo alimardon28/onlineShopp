@@ -152,3 +152,34 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+  .saveCorzinca {
+    width: 100%;
+  }
+
+  .savedCorzina {
+    width: 95%;
+  }
+
+  .productsItogo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .savedCorzina {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .saved img {
+    width: 100px;
+    height: 123px;
+  }
+
+  .productsItogo {
+    width: 100%;
+  }
+}
