@@ -7,7 +7,7 @@
 .form-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap !important;
 }
 
@@ -345,4 +345,40 @@
   padding: 16px 72px;
   border-radius: 12px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 760px) {
+  .form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .orderingLeft {
+    width: 90%;
+  }
+
+  .orderingRight {
+    margin-top: 23px;
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .form {
+    padding: 4px;
+  }
+
+  .orderingInputs .ordering-inputs {
+    width: 45%;
+  }
+
+  .orderingBoxBtn .orderingBtn {
+    padding: 20px 30px;
+  }
 }

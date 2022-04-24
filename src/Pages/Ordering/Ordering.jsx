@@ -23,7 +23,7 @@ const Ordering = () => {
   });
 
   return (
-    <>
+    <div id="ordering">
       <div className="container">
         <h2 className="orderingHeading">Оформление заказа</h2>
 
@@ -163,7 +163,7 @@ const Ordering = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
