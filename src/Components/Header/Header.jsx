@@ -13,28 +13,30 @@ const Header = () => {
 
   return (
     <div className="headers">
+        <div className="container">
       <header className="header">
-        <div className="header-left">
-          <Link className="header-link" to="/">
-            <img src={logo} alt="icon images" />
-          </Link>
-        </div>
+          <div className="header-left">
+            <Link className="header-link" to="/">
+              <img src={logo} alt="icon images" />
+            </Link>
+          </div>
 
-        <ul className="header-list">
-          <li className="header-item">
-            <Link className="header-item-link" to="/selected">
-              <img className="heart-icons" src={heart} alt="heart images" />
-              <span className="header-span">{withLove.length}</span>
-            </Link>
-          </li>
-          <li className="header-item">
-            <Link className="header-item-link" to="/corzinka">
-              <img className="heart-icons" src={cart} alt="cart images" />
-              <span className="header-span">{savedCorzinka.length}</span>
-            </Link>
-          </li>
-        </ul>
+          <ul className="header-list">
+            <li className="header-item">
+              <Link className="header-item-link" to="/selected">
+                <img className="heart-icons" src={heart} alt="heart images" />
+                <span className="header-span">{withLove.length}</span>
+              </Link>
+            </li>
+            <li className="header-item">
+              <Link className="header-item-link" to="/corzinka">
+                <img className="heart-icons" src={cart} alt="cart images" />
+                <span className="header-span">{savedCorzinka.length}</span>
+              </Link>
+            </li>
+          </ul>
       </header>
+        </div>
     </div>
   );
 };
