@@ -32,46 +32,51 @@ const Products = () => {
   return (
     <>
       <div className="products">
-        <div className="bannerBox">
-          <img src={banner} alt="banner images" />
-        </div>
+        <div className="container">
+          <div className="bannerBox">
+            <img src={banner} alt="banner images" />
+          </div>
 
-        <ul className="productsList">
-          {products?.map((product) => {
-            return (
-              <li className="productsItem" key={product.id}>
-                <div className="buttonBox">
-                  <button
-                    id={product.id}
-                    onClick={(e) => hanleClick(e)}
-                    data-id={product.id}
-                    className="heartBox"
-                  >
-                    <img
+          <ul className="productsList">
+            {products?.map((product) => {
+              return (
+                <li className="productsItem" key={product.id}>
+                  <div className="buttonBoxBtnGroup">
+                    <button
                       id={product.id}
-                      src={product.addSaved ? heartFill : heart}
-                      alt="heart images"
-                    />
-                  </button>
-                </div>
-                <Link className="productsLink" to={`/posts/${product.id}`}>
-                  <div className="productscard">
-                    <div className="productsImages">
-                      <img src={product.url} alt={`${product.title} images`} />
-                    </div>
-                    <div className="productsHeading">
-                      <h2 className="productsTitle">{product.title}</h2>
-                    </div>
-                    <div className="productsCardBody">
-                      <span className="productsSum">$ {product.sum}</span>
-                      <span className="productsStar">⭐️ {product.star}</span>
-                    </div>
+                      onClick={(e) => hanleClick(e)}
+                      data-id={product.id}
+                      className="heartBoxButtons"
+                    >
+                      <img
+                        id={product.id}
+                        src={product.addSaved ? heartFill : heart}
+                        alt="heart images"
+                      />
+                    </button>
                   </div>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+                  <Link className="productsLink" to={`/posts/${product.id}`}>
+                    <div className="productscard">
+                      <div className="productsImages">
+                        <img
+                          src={product.url}
+                          alt={`${product.title} images`}
+                        />
+                      </div>
+                      <div className="productsHeading">
+                        <h2 className="productsTitle">{product.title}</h2>
+                      </div>
+                      <div className="productsCardBody">
+                        <span className="productsSum">$ {product.sum}</span>
+                        <span className="productsStar">⭐️ {product.star}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </>
   );

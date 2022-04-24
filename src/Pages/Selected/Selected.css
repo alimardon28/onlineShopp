@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 
-.buttonBox {
+.buttonBoxSelected {
   text-align: start;
   width: 40px;
 }

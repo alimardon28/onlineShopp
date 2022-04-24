@@ -25,7 +25,7 @@ const Selected = () => {
               {withLove?.map((item) => {
                 return (
                   <li className="productsItem" key={item.id}>
-                    <div className="buttonBox">
+                    <div className="buttonBoxSelected">
                       <button
                         id={item.id}
                         onClick={(id) => hanleDeleteClick(item.id)}

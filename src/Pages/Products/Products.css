@@ -1,6 +1,6 @@
 .products {
   margin: 0;
-  padding: 0px 30px;
+  padding: 0px 10px;
 }
 
 .bannerBox img {
@@ -31,12 +31,12 @@
   flex-direction: column;
 }
 
-.buttonBox {
+.buttonBoxBtnGroup {
   text-align: start;
   width: 40px;
 }
 
-.heartBox {
+.heartBoxButtons {
   cursor: pointer;
   border: none;
   outline: none;
@@ -44,8 +44,8 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.heartBox img {
-  width: 100%;
+.heartBoxButtons img {
+  width: 35px;
 }
 .productsLink {
   text-decoration: none;
@@ -89,4 +89,23 @@
 .productsStar {
   font-weight: bold;
   color: #4a4a4a;
+}
+
+@media screen and (max-width: 769px) {
+  .productsItem {
+    width: 330px !important;
+    padding: 14px !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .productsList {
+    padding: 0px 20px !important;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .productsList {
+    padding: 0px !important;
+  }
 }
