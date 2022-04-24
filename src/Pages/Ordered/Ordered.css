@@ -5,6 +5,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 60vh;
+  padding: 10px;
 }
 
 .orderedBox {
@@ -33,4 +34,13 @@
 
 .orderidHero-gif {
   max-width: 350px;
+}
+
+@media screen and (max-width: 400px) {
+  .orderedBox {
+    padding: 14px;
+  }
+  .ordered-desc {
+    font-size: 16px;
+  }
 }

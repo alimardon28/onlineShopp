@@ -370,12 +370,18 @@
 }
 
 @media screen and (max-width: 380px) {
+  .orderingInputs .ordering-inputs {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 380px) {
   .form {
     padding: 4px;
   }
 
   .orderingInputs .ordering-inputs {
-    width: 45%;
+    width: 40%;
   }
 
   .orderingBoxBtn .orderingBtn {
