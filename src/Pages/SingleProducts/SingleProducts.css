@@ -46,9 +46,8 @@
 
 .sinleProductsBox {
   display: flex;
-  justify-content: center;
-
-  width: 70%;
+  justify-content: space-between;
+  width: 87%;
   margin-top: 20px;
 }
 
@@ -86,17 +85,18 @@
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+  width: 36%;
 }
 
 .singliBtnLink {
   text-decoration: none;
+  width: 240px;
+  height: 55px;
 }
 
 .button {
   margin: 0;
   padding: 15px;
-  width: 240px;
-  height: 55px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -104,10 +104,14 @@
   background-color: black;
   font-size: 20px;
   cursor: pointer;
+  width: 240px;
+  height: 55px;
 }
 
 .button:nth-child(2) {
   margin-top: 20px;
+  width: 240px;
+  height: 55px;
 }
 
 .button .bi-cart3 {
@@ -131,4 +135,82 @@
 
 .heartBtn img {
   width: 100%;
+}
+
+@media screen and (max-width: 1011px) {
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sinleProductsBox {
+    width: 99%;
+  }
+  .single-products {
+    width: 95%;
+  }
+  .imagesBox {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .single-products {
+    width: 91%;
+  }
+  .sinleProductsBox {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .buttonBox {
+    margin-top: 30px;
+    width: 97%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .buttonBox .button {
+    width: 350px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .imagesBox img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .imagesBox img {
+    width: 320px;
+  }
+  .single-products {
+    width: 91%;
+  }
+  .sumBox .sumBox-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .single-products {
+    width: 86%;
+  }
+  .imagesBox img {
+    width: 290px;
+  }
+
+  .sumBox .sumBox-title {
+    font-size: 14px;
+  }
+
+  .buttonBox .button {
+    width: 320px;
+    margin-left: 0;
+  }
 }
